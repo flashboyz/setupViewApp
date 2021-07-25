@@ -59,31 +59,31 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vns-8j-HnY">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vns-8j-HnY">
                                 <rect key="frame" x="145" y="287" width="231" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="vns-8j-HnY" secondAttribute="height" multiplier="227:30" id="u07-9N-zeJ"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="redSliderChanges" destination="BYZ-38-t0r" eventType="valueChanged" id="3qW-nA-xQ2"/>
+                                    <action selector="rgbChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="LLo-qg-efu"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u4F-7Z-6dN">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u4F-7Z-6dN">
                                 <rect key="frame" x="145" y="329" width="231" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="u4F-7Z-6dN" secondAttribute="height" multiplier="227:30" id="xpv-iN-NrN"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="greenSliderChanges" destination="BYZ-38-t0r" eventType="valueChanged" id="E4a-Lc-hyo"/>
+                                    <action selector="rgbChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="MDV-XK-hto"/>
                                 </connections>
                             </slider>
-                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-Xz-H4p">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-Xz-H4p">
                                 <rect key="frame" x="145" y="372" width="231" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="ezW-Xz-H4p" secondAttribute="height" multiplier="227:30" id="dlB-Tg-3vc"/>
                                 </constraints>
                                 <connections>
-                                    <action selector="blueSliderChanges" destination="BYZ-38-t0r" eventType="valueChanged" id="lzF-UX-wpR"/>
+                                    <action selector="rgbChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="fwk-VQ-o4t"/>
                                 </connections>
                             </slider>
                         </subviews>
