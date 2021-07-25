@@ -94,29 +94,29 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="hPv-A5-yGl">
-                                <rect key="frame" x="122" y="287" width="180" height="114"/>
+                                <rect key="frame" x="122" y="287" width="188" height="114"/>
                                 <subviews>
-                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vns-8j-HnY">
-                                        <rect key="frame" x="-2" y="0.0" width="184" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="vns-8j-HnY">
+                                        <rect key="frame" x="-2" y="0.0" width="192" height="31"/>
                                         <connections>
                                             <action selector="rgbChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="LLo-qg-efu"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u4F-7Z-6dN">
-                                        <rect key="frame" x="-2" y="42" width="184" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="u4F-7Z-6dN">
+                                        <rect key="frame" x="-2" y="42" width="192" height="31"/>
                                         <connections>
                                             <action selector="rgbChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="MDV-XK-hto"/>
                                         </connections>
                                     </slider>
-                                    <slider opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-Xz-H4p">
-                                        <rect key="frame" x="-2" y="84" width="184" height="31"/>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="ezW-Xz-H4p">
+                                        <rect key="frame" x="-2" y="84" width="192" height="31"/>
                                         <connections>
                                             <action selector="rgbChanges:" destination="BYZ-38-t0r" eventType="valueChanged" id="fwk-VQ-o4t"/>
                                         </connections>
                                     </slider>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="180" id="Oei-Mb-xOJ"/>
+                                    <constraint firstAttribute="width" constant="188" id="dvs-nF-cQ3"/>
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v6I-QP-6UO">
@@ -128,6 +128,9 @@
                                 <state key="normal" title="Done">
                                     <color key="titleColor" systemColor="linkColor"/>
                                 </state>
+                                <connections>
+                                    <action selector="doneButton" destination="BYZ-38-t0r" eventType="touchUpInside" id="ncf-5w-n82"/>
+                                </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="3uR-hX-td7">
                                 <rect key="frame" x="315" y="287" width="55" height="116"/>
@@ -156,21 +159,21 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.91772705316543579" green="0.8343169093132019" blue="0.95624178647994995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hPv-A5-yGl" firstAttribute="leading" secondItem="UP7-NK-htg" secondAttribute="trailing" constant="16" id="7XU-Mi-txT"/>
                             <constraint firstItem="yVW-Xc-sSx" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="28" id="8mX-Wx-3L5"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="yVW-Xc-sSx" secondAttribute="trailing" constant="20" id="9ZW-d1-FIr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="3uR-hX-td7" secondAttribute="trailing" constant="20" id="DhE-pO-EXX"/>
                             <constraint firstItem="v6I-QP-6UO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="149" id="FDl-Vu-Q02"/>
                             <constraint firstItem="hPv-A5-yGl" firstAttribute="top" secondItem="yVW-Xc-sSx" secondAttribute="bottom" constant="53" id="ICS-OB-UZo"/>
-                            <constraint firstItem="hPv-A5-yGl" firstAttribute="leading" secondItem="UP7-NK-htg" secondAttribute="trailing" constant="16" id="JvE-UC-YBj"/>
-                            <constraint firstItem="UP7-NK-htg" firstAttribute="leading" secondItem="Grn-Rl-LFS" secondAttribute="trailing" constant="7.6666666666666572" id="LxU-lo-DmJ"/>
                             <constraint firstItem="1Xh-XM-HCg" firstAttribute="top" secondItem="yVW-Xc-sSx" secondAttribute="bottom" constant="53" id="NNM-qe-LRy"/>
                             <constraint firstItem="yVW-Xc-sSx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="RVk-rb-A0o"/>
                             <constraint firstItem="Grn-Rl-LFS" firstAttribute="top" secondItem="yVW-Xc-sSx" secondAttribute="bottom" constant="56" id="WGD-gd-QiS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="v6I-QP-6UO" secondAttribute="bottom" constant="285" id="X1s-cq-yGB"/>
-                            <constraint firstItem="v6I-QP-6UO" firstAttribute="top" secondItem="hPv-A5-yGl" secondAttribute="bottom" constant="94" id="jD9-EJ-Kns"/>
+                            <constraint firstItem="oWE-9d-ibO" firstAttribute="leading" secondItem="hPv-A5-yGl" secondAttribute="trailing" constant="5" id="ZK8-iz-Qh9"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="v6I-QP-6UO" secondAttribute="trailing" constant="149" id="jxS-pm-oVm"/>
                             <constraint firstItem="UP7-NK-htg" firstAttribute="top" secondItem="yVW-Xc-sSx" secondAttribute="bottom" constant="59" id="nDb-ej-epE"/>
                             <constraint firstItem="Grn-Rl-LFS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16.000000000000004" id="nMt-V1-9o3"/>
+                            <constraint firstItem="UP7-NK-htg" firstAttribute="leading" secondItem="Grn-Rl-LFS" secondAttribute="trailing" constant="7.6666666666666572" id="tzO-md-xlh"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Zgm-60-AmK"/>
