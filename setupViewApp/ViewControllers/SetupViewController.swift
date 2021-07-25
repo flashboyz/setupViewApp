@@ -7,8 +7,10 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class SetupViewController: UIViewController {
     
+    var mainScreenBackGroundColor: UIColor?
+        
     @IBOutlet weak var mainView: UIView!
     
     @IBOutlet weak var redLabel: UILabel!
@@ -19,8 +21,17 @@ class ViewController: UIViewController {
     @IBOutlet weak var greenSlider: UISlider!
     @IBOutlet weak var blueSlider: UISlider!
     
+    @IBOutlet weak var redTextField: UITextField!
+    @IBOutlet weak var greenTextField: UITextField!
+    @IBOutlet weak var blueTextField: UITextField!
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        mainView.layer.cornerRadius = 15
+//        mainView.backgroundColor = mainScreenBackGroundColor
         
         redSlider.maximumTrackTintColor = #colorLiteral(red: 0.9999018312, green: 1, blue: 0.9998798966, alpha: 1)
         redSlider.minimumTrackTintColor = #colorLiteral(red: 0.8078431487, green: 0.02745098062, blue: 0.3333333433, alpha: 1)
@@ -35,7 +46,13 @@ class ViewController: UIViewController {
         greenLabel.text = String(format: "%.2f", greenSlider.value)
         blueLabel.text = String(format: "%.2f", blueSlider.value)
         
+        redTextField.text = redLabel.text
+        greenTextField.text = greenLabel.text
+        blueTextField.text = blueLabel.text
+        
         setColor()
+        mainView.backgroundColor = mainScreenBackGroundColor
+
     }
     
     
@@ -43,9 +60,16 @@ class ViewController: UIViewController {
         setColor()
         
         redLabel.text = String(format: "%.2f", redSlider.value)
+        redTextField.text = redLabel.text
         greenLabel.text = String(format: "%.2f", greenSlider.value)
+        greenTextField.text = greenLabel.text
         blueLabel.text = String(format: "%.2f", blueSlider.value)
+        blueTextField.text = blueLabel.text
     }
+    
+    
+   
+    
     
     // MARK: -private function
     private func setColor() {
